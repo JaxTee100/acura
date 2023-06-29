@@ -1,0 +1,25 @@
+.shopping-cart-container{
+    display: flex;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.shopping-cart-icon{
+    font-size: 30px;
+}
+
+.shopping-cart-value{
+    background-color: #4285F4;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -4px;
+}
+.shopping-cart-value p{
+    font-size: 8px;
+    color: white;
+    font-weight: 600;
+}

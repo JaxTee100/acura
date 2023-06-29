@@ -1,0 +1,70 @@
+.size-input__container{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 40px;
+    background-color: white;
+    padding: 10px;
+    width: 35%;
+    font-family: var(--font-family);
+}
+.size-input__container-tire-size{
+    display: flex;
+    position: relative;
+    width: 45%;
+    height: 54px;
+}
+.size-input__container-tire-size input{
+    outline: none;
+    border: none;
+    border: 1px solid #c9c7c7;
+    color: black;
+    width: 100%;
+    border-radius: 35px;
+    font-size: 16px;
+    text-align: left;
+    padding-left: 33px;
+}
+.size-input__container-tire-size .tire{
+    position: absolute;
+    font-size: 18px;
+    top: 31%;
+    left: 2%;
+    color: black;
+}
+.size-input__container-tire-size .info{
+    position: absolute;
+    font-size: 18px;
+    top: 31%;
+    left: 90%;
+}
+.size-input__container .zip{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 54px;
+    width: 25%;
+    margin-left: -20px;
+}
+.size-input__container .zip .location{
+    position: absolute;
+    font-size: 24px;
+    left: 2%;
+    margin-right: 20px;
+}
+.size-input__container .zip input{
+    font-size: 16px;
+    padding-left: 33px;
+    outline: none;
+    border: none;
+    border-radius: 35px;
+    height: 100%;
+    width: 100%;
+    border: 0.1px solid #c9c7c7;
+}
+
+.size-input__container .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -5px;
+}

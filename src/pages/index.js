@@ -1,0 +1,6 @@
+export {default as Home} from './Home/Home.page'
+export {default as Accessories} from './Accessories/Accessories.page'
+export {default as Contact} from './Contact-Us/Contact.page'
+export {default as Packages} from './Packages/Packages.page'
+export {default as Wheels} from './Wheels/Wheels.page'
+export {default as Tires} from './Tires/Tires.page'

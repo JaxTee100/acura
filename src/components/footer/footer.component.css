@@ -1,0 +1,10 @@
+.footer-images{
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-images img {
+    height: 100px;
+    width: 100px;
+    background-color: #F2F2F2;
+}
