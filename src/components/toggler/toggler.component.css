@@ -61,19 +61,12 @@
         height: 50px;
     }
 }
-@media screen and (max-width: 550px){
-    .gpt3__navbar{
-        padding: 2rem;
-    }
-
-    .gpt3__navbar-sign{
-        display: none;
-    }
-    .gpt3__navbar-menu_container{
-        top: 20px;
-    }
-
-    .gpt3__navbar-menu_container-links-sign{
-        display: block;
+@media screen and (max-width: 1500px){
+    .toggler__container{
+        display: flex;
+        justify-content: space-around;
+        font-family: var(--font-family);
+        width: 20%;
+        height: 50px;
     }
 }

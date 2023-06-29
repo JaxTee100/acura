@@ -34,26 +34,26 @@ const Navbar = () => {
   return (
     <nav>
       <div className='nav-link-items'>
-      <div className='nav__logo'>
-        <div className='nav__logo-text'>
-          <div><h1>A</h1></div>
-          <h1>ACURA</h1>
+        <div className='nav__logo'>
+          <div className='nav__logo-text'>
+            <div><h1>A</h1></div>
+            <h1>ACURA</h1>
+          </div>
+          <p>PRECISION CRAFTED PERFORMANCE</p>
         </div>
-        <p>PRECISION CRAFTED PERFORMANCE</p>
-      </div>
-      
-        <Menu />
-      
-      <div className='nav__click-items'>
-        <Button text="Sign in" color='#4285F4' radius={'20px'}/>
-        <ShoppingCart value="03"/>
-      </div>
+        
+          <Menu />
+        
+        <div className='nav__click-items'>
+          <Button text="Sign in" color='#4285F4' radius={'20px'}/>
+          <ShoppingCart value="03"/>
+        </div>
       </div>
       
       <div className='navbar-menu'>
         {toggleMenu 
-          ? <RiCloseLine color='#fff' size={27} onClick={() =>setToggleMenu(false) } />
-          : <RiMenu3Line color='#fff' size={27} onClick={() => setToggleMenu(true)} />
+          ? <RiCloseLine  size={27} onClick={() =>setToggleMenu(false) } />
+          : <RiMenu3Line  size={27} onClick={() => setToggleMenu(true)} />
         }
         {
           toggleMenu && (
