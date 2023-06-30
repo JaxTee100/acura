@@ -27,7 +27,7 @@
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
     width: 50%;
-    padding: 30px;
+    padding: 30px 60px;
     background: linear-gradient(90deg, rgba(1, 16, 50, 1) 67%, rgba(31, 65, 120, 1) 92%);
 }
 .home2__container-acura-image-title h1{
@@ -48,12 +48,14 @@
 .home2__container-acura-image-img{
     width: 50%;
     height: 100%;
+    
 }
 .home2__container-acura-image-img img{
     height: 100%;
     width: 100%;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
+    
 }
 
 
@@ -87,6 +89,7 @@
         font-size: 30px;
     }
     .home2__container-acura-image-img {
+        
         height: 100%;
         width: 100%;
     }
