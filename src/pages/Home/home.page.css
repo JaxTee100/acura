@@ -51,52 +51,30 @@
     width: 100%;
 }
 
-@media screen and (max-width: 1050px){
+@media screen and (max-width: 600px){
+    .home__container{
+        font-family: var(--home-font-family);
+        height: 90vh;
+        background-color: #ede6e6;
+    }
     .home__container-acura-image{
         display: flex;
         flex-direction: column;
-        height: 45%;
     }
     .home__container-acura-image-title{
         width: 100%;
-        padding: 30px;
+        height: 30vh;
         text-align: center;
+    }
+    .home__container-acura-image-title h1{
+        font-size: 35px;
+    }
+    .home__container-acura-image-title h2{
+        font-size: 30px;
     }
     .home__container-acura-image-img{
         width: 100%;
-        height: 50%;
     }
-    .home__container-inputs{
-        border: 1px solid red;
-    }
-    .home__container-toggler{
-        margin-top: 80px;
-        display: flex;
-        justify-content: center;
-    }
-
-}
-@media screen and (max-width: 700px){
-    .gpt3__navbar{
-        padding: 2rem 4rem;
-    }
-
-    .gpt3__navbar-menu{
-        display: flex;
-    }
-}
-@media screen and (max-width: 550px){
     
-}
-
-@media screen and (max-width: 1500px){
-    
-    .home__container-acura-image-title{
-        text-align: center;
-        transition: 0.1s all ease;
-    }
-    .home__container-acura-image-title h1{
-        font-size: 80px;
-    }
 
 }

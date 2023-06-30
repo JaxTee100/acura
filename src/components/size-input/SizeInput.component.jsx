@@ -3,7 +3,6 @@ import {TbBallFootball } from 'react-icons/tb';
 import {AiOutlineInfoCircle} from 'react-icons/ai';
 import {CiLocationOn} from 'react-icons/ci';
 import './size-input.component.css'
-import Button from '../button/Button.component';
 
 const SizeInput = () => {
   return (
@@ -20,7 +19,7 @@ const SizeInput = () => {
             
         </div>
         <div className='btn'>
-            <Button text="View Result" color='#4285F4' width={'150px'} height={'45px'} radius={'20px'}/>
+            <button>View Result</button>
         </div>
 
       
