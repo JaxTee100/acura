@@ -8,13 +8,31 @@
     background-color: #F2F2F2;
 }
 
-@media screen and (max-width: 1050px){
-    .footer-images{
-        border: 1px solid yellow;
-        margin-top: 150px;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+@media only screen and (max-width: 600px) {
+    /* CSS rules for small devices */
+    footer{
+        border: 2px solid red;
+        margin-top: 300px;
+        
     }
+    .footer-images{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+  }
+  
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+/* CSS rules for medium-sized devices */
+footer{
+    border: 2px solid green;
+    margin-top: 300px;
+    background-color: white;
+}
 
 }
+@media only screen and (min-width: 1025px) {
+    /* CSS rules for large devices */
+    
+  }
+  

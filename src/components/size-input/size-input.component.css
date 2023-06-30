@@ -1,6 +1,6 @@
 .size-input__container{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     border-radius: 40px;
     background-color: white;
     padding: 10px;
@@ -70,75 +70,46 @@
     margin-left: -5px;
 }
 
-@media screen and (max-width: 1050px){
+@media only screen and (max-width: 600px) {
+    /* CSS rules for small devices */
     .size-input__container{
+        border: 2px solid red;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 100px;
-        
+        justify-content: space-between;
+        border-radius: 40px;
         background-color: white;
-        padding: 5px;
+        padding: 10px;
+        width: 35%;
+        font-family: var(--font-family);
+        border: 2px solid green;
         width: 100%;
     }
+  }
 
-    .size-input__container-tire-size{
-        margin-bottom: 10px;
-        display: flex;
-        position: relative;
-        width: 75%;
-        height: 54px;
-    }
-    .size-input__container .zip{
-        position: relative;
-        display: flex;
-        align-items: center;
-        height: 54px;
-        width: 75%;
-        margin-left: 0;
-        margin-bottom: 10px;
-    }
-    .size-input__container .btn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 0;
-        width: 100%;
-    }
-
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+/* CSS rules for medium-sized devices */
+body{
+    background-color: #f2f2f2;
 }
-@media screen and (max-width: 1500px){
+.size-input__container{
+    border: 2px solid green;
+    width: 95%;
+}
+}
+
+@media only screen and (min-width: 1025px) {
+    /* CSS rules for large devices */
     .size-input__container{
+        border: 2px solid blue;
         display: flex;
-        align-items: center;
-        margin-bottom: 100px;
-        
+        justify-content: space-between;
+        border-radius: 40px;
         background-color: white;
-        padding: 5px;
-        width: 1500px;
+        padding: 10px;
+        max-width: 600px;
+        width: 55%;
+        font-family: var(--font-family);
     }
-
-    .size-input__container-tire-size{
-        margin-bottom: 10px;
-        margin-right: 10px;
-        display: flex;
-        position: relative;
-        height: 54px;
-    }
-    .size-input__container .zip{
-        position: relative;
-        display: flex;
-        align-items: center;
-        height: 54px;
-        width: 25%;
-        margin-bottom: 10px;
-    }
-    .size-input__container .btn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 0;
-        width: 25%;
-    }
-
-}
+  }
+  
+    

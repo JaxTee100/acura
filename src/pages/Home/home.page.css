@@ -20,7 +20,7 @@
 }
 .home__container-acura-image{
     display: flex;
-    height: 45%;
+    height: 55%;
 }
 .home__container-acura-image-title{
     width: 50%;
@@ -86,18 +86,17 @@
     }
 }
 @media screen and (max-width: 550px){
-    .gpt3__navbar{
-        padding: 2rem;
+    
+}
+
+@media screen and (max-width: 1500px){
+    
+    .home__container-acura-image-title{
+        text-align: center;
+        transition: 0.1s all ease;
+    }
+    .home__container-acura-image-title h1{
+        font-size: 80px;
     }
 
-    .gpt3__navbar-sign{
-        display: none;
-    }
-    .gpt3__navbar-menu_container{
-        top: 20px;
-    }
-
-    .gpt3__navbar-menu_container-links-sign{
-        display: block;
-    }
 }
