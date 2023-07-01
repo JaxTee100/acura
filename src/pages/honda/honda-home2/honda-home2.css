@@ -19,27 +19,27 @@
     font-size: 25px;
     text-align: center;
 }
-.home__container-honda-image-img img{
+.home__container-honda-image-img2 img{
     width: 100%;
     height: 50%;
     border-radius: 20px;
 }
-.home__container-honda-image-name{
+.home__container-honda-image-name2{
     position: absolute;
-    top: 140.6%;
+    top: 131.5%;
     left: 89.16%;
     padding: 5px;
     background-color: #ede6e6;
 }
-.home__container-honda-image-name .texts h2{
+.home__container-honda-image-name2 .texts h2{
     font-weight: 600;
 }
-.home__container-honda-image-name .texts p{
+.home__container-honda-image-name2 .texts p{
     color: black;
     font-size: 16px;
     font-weight: 600;
 }
-.home__container-honda-image-name .texts p span{
+.home__container-honda-image-name2 .texts p span{
     font-weight: 600;
     margin-left: 5px;
     font-size: 16px;

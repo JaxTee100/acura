@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import './navbar.component.css'
-import {Button, LogoContainer,  ShoppingCart} from '../index'
+import './navbar.css'
+import {Button, LogoContainer,  ShoppingCart} from '../../../../components'
 import {RiMenu3Line, RiCloseLine} from 'react-icons/ri';
 
 
@@ -9,25 +9,25 @@ const Menu = () => {
   return (
         <ul className='nav__list-links'>
           <li>
-            <NavLink to="/acura-home" activeClassName="active">Acura</NavLink>
+            <NavLink to="/honda-home" activeClassName="active">Honda</NavLink>
           </li>
           <li>
-            <NavLink to="/acura-home2" >Acura2</NavLink>
+            <NavLink to="/honda-home2" >Honda2</NavLink>
           </li>
           <li>
-            <NavLink to="/tires">Tires</NavLink>
+            <NavLink to="/honda-tires">Tires</NavLink>
           </li>
           <li>
-            <NavLink to="/wheels">Wheels</NavLink>
+            <NavLink to="/honda-wheels">Wheels</NavLink>
           </li>
           <li>
-            <NavLink to="/accessories" activeClassName="active">Accessories</NavLink>
+            <NavLink to="/honda-accessories">Accessories</NavLink>
           </li>
           <li>
-            <NavLink to="/packages" activeClassName="active">Packages</NavLink>
+            <NavLink to="/honda-packages" >Packages</NavLink>
           </li>
           <li>
-            <NavLink to="/contact" activeClassName="active">Contact Us</NavLink>
+            <NavLink to="/honda-contact" >Contact Us</NavLink>
           </li>
           
         </ul>
@@ -36,7 +36,7 @@ const Menu = () => {
 
 
 
-const Navbar = ({color, btnColor, letter, Brand, paragraph, fontColor}) => {
+const HondaNavbar = ({color, btnColor, letter, Brand, paragraph, fontColor}) => {
   const styles = {
     backgroundColor: color,
   }
@@ -50,7 +50,7 @@ const Navbar = ({color, btnColor, letter, Brand, paragraph, fontColor}) => {
         
         <div className='nav__click-items'>
           <Button text="Sign in" color={btnColor} radius={'20px'}/>
-          <ShoppingCart value="03" color={'#4285F4'}/>
+          <ShoppingCart value="03" color={'red'}/>
         </div>
       </div>
       
@@ -79,4 +79,4 @@ const Navbar = ({color, btnColor, letter, Brand, paragraph, fontColor}) => {
   );
 };
 
-export default Navbar;
+export default HondaNavbar;

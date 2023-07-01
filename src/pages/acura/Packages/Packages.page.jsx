@@ -1,11 +1,11 @@
 import React from 'react'
 import './packages.page.css'
-import { Navbar } from '../../components'
+import { Navbar } from '../../../components'
 
 const Packages= () => {
   return (
     <div>
-      <Navbar />
+      <Navbar btnColor={'blue'} Brand={'Acura'} paragraph={'PRECISION CRAFTED PERFORMANCE'} letter={'A'} />
       <h1>Packages</h1>
     </div>
   )

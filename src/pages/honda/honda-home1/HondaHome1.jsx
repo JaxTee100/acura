@@ -2,11 +2,12 @@ import React from 'react'
 import Tires from '../../../assets/tires.jpg'
 import { Footer, Navbar, Toggler, SizeInput, Button } from '../../../components'
 import './honda-home1.css'
+import HondaNavbar from '../components/Navbar/Navbar'
 
 const HondaHome1 = () => {
   return (
     <div className='honda-home-container'>
-      <Navbar />
+      <HondaNavbar fontColor={'red'} btnColor={'#ce4e4e'} Brand={'HONDA'} paragraph={'The power of dreams'} />
       <div className='home__container'>
         <div className='home__container-honda-image'>
           <div className='home__container-honda-image-text'>

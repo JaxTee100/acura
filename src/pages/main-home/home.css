@@ -1,0 +1,17 @@
+.link-container{
+    margin: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    color: blueviolet;
+    font-weight: 600;
+    
+}
+
+.link-container p:hover {
+    color: red;
+    font-size: 33px;
+    transition: 1s all ease-in;
+}

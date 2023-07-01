@@ -1,11 +1,11 @@
 import React from 'react'
 import './tires.page.css'
-import { Navbar } from '../../components'
+import { Navbar } from '../../../components'
 
 const Tires = () => {
   return (
     <div>
-      <Navbar />
+      <Navbar btnColor={'blue'} Brand={'Acura'} paragraph={'PRECISION CRAFTED PERFORMANCE'} letter={'A'} />
       <h1>Tires Page</h1>
     </div>
   )

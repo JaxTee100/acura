@@ -1,12 +1,12 @@
 import React from 'react'
 import './home2.page.css'
-import {Button, Navbar, SizeInput, Toggler} from '../../components'
-import Acura from '../../assets/acura2.jpeg'
+import {Button, Navbar, SizeInput, Toggler} from '../../../components'
+import Acura from '../../../assets/acura2.jpeg'
 
 const Home2 = () => {
   return (
     <div className='home2__container'>
-      <Navbar />
+      <Navbar btnColor={'blue'} Brand={'Acura'} paragraph={'PRECISION CRAFTED PERFORMANCE'} letter={'A'} />
       <div className='home2__container-acura-image'>
         <div className='home2__container-acura-image-title'>
           <h1>INTEGRA WINS.</h1>
