@@ -1,9 +1,11 @@
-
+.active{
+    border-bottom: 2px solid blue;
+}
 .nav-link-items{
     display: flex;
     justify-content: space-around;
     padding: 20px;
-    background-color: #EFEFEF;
+    font-family: var(--font-family);
 }
 .nav__logo{
     text-align: center;

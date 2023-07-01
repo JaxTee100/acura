@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './navbar.component.css'
 import {Button, ShoppingCart} from '../index'
 import {RiMenu3Line, RiCloseLine} from 'react-icons/ri';
@@ -8,35 +8,45 @@ const Menu = () => {
   return(
     <ul className='nav__list-links'>
           <li>
-            <Link to="/">Home</Link>
+            <NavLink to="/" activeClassName="active">Acura</NavLink>
           </li>
           <li>
-            <Link to="/home2">Home2</Link>
+            <NavLink to="/acura-home2" activeClassName="active">Acura2</NavLink>
           </li>
           <li>
-            <Link to="/tires">Tires</Link>
+            <NavLink to="/honda-home" activeClassName="active">Honda</NavLink>
           </li>
           <li>
-            <Link to="/wheels">Wheels</Link>
+            <NavLink to="/honda-home2" activeClassName="active">Honda2</NavLink>
           </li>
           <li>
-            <Link to="/accessories">Accessories</Link>
+            <NavLink to="/tires" activeClassName="active">Tires</NavLink>
           </li>
           <li>
-            <Link to="/packages">Packages</Link>
+            <NavLink to="/wheels" activeClassName="active">Wheels</NavLink>
           </li>
           <li>
-            <Link to="/contact">Contact Us</Link>
+            <NavLink to="/accessories" activeClassName="active">Accessories</NavLink>
           </li>
+          <li>
+            <NavLink to="/packages" activeClassName="active">Packages</NavLink>
+          </li>
+          <li>
+            <NavLink to="/contact" activeClassName="active">Contact Us</NavLink>
+          </li>
+          
         </ul>
   )
 }
 
-const Navbar = () => {
+const Navbar = ({color}) => {
+  const styles = {
+    backgroundColor: color
+  }
   const [toggleMenu, setToggleMenu] = useState(false)
   return (
     <nav>
-      <div className='nav-link-items'>
+      <div className='nav-link-items' style={styles}>
         <div className='nav__logo'>
           <div className='nav__logo-text'>
             <div><h1>A</h1></div>

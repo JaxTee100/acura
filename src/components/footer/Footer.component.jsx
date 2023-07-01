@@ -11,10 +11,13 @@ import Uniroyal from '../../assets/uniroyal.png'
 import './footer.component.css'
 
 
-const Footer = () => {
+const Footer = ({color}) => {
+  const styles = {
+    backgroundColor: color
+  }
   return (
     <footer>
-      <div className='footer-images'>
+      <div className='footer-images' style={styles}>
         <img src={Hankook} alt="hankook"/>
         <img src={GoodYear} alt="goodyear"/>
         <img src={Pirelli} alt="pirelli"/>

@@ -1,11 +1,12 @@
 import React from 'react'
 import './home2.page.css'
-import {Button, SizeInput, Toggler} from '../../components'
+import {Button, Navbar, SizeInput, Toggler} from '../../components'
 import Acura from '../../assets/acura2.jpeg'
 
 const Home2 = () => {
   return (
     <div className='home2__container'>
+      <Navbar />
       <div className='home2__container-acura-image'>
         <div className='home2__container-acura-image-title'>
           <h1>INTEGRA WINS.</h1>
