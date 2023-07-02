@@ -9,25 +9,25 @@ const Menu = () => {
   return (
         <ul className='nav__list-links'>
           <li>
-            <NavLink to="/acura-home" activeClassName="active">Acura</NavLink>
+            <NavLink to="/acura-home" className='nav-link' activeClassName="active">Acura</NavLink>
           </li>
           <li>
-            <NavLink to="/acura-home2" >Acura2</NavLink>
+            <NavLink to="/acura-home2" className='nav-link' activeClassName="active" >Acura2</NavLink>
           </li>
           <li>
-            <NavLink to="/tires">Tires</NavLink>
+            <NavLink to="/tires" className='nav-link' activeClassName="active">Tires</NavLink>
           </li>
           <li>
-            <NavLink to="/wheels">Wheels</NavLink>
+            <NavLink to="/wheels" className='nav-link' activeClassName="active">Wheels</NavLink>
           </li>
           <li>
-            <NavLink to="/accessories" activeClassName="active">Accessories</NavLink>
+            <NavLink to="/accessories" className='nav-link' activeClassName="active">Accessories</NavLink>
           </li>
           <li>
-            <NavLink to="/packages" activeClassName="active">Packages</NavLink>
+            <NavLink to="/packages" className='nav-link' activeClassName="active">Packages</NavLink>
           </li>
           <li>
-            <NavLink to="/contact" activeClassName="active">Contact Us</NavLink>
+            <NavLink to="/contact" className='nav-link' activeClassName="active">Contact Us</NavLink>
           </li>
           
         </ul>

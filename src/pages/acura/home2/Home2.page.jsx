@@ -1,6 +1,6 @@
 import React from 'react'
 import './home2.page.css'
-import {Button, Navbar, SizeInput, Toggler} from '../../../components'
+import {Button, Footer, Navbar, SizeInput, Toggler} from '../../../components'
 import Acura from '../../../assets/acura2.jpeg'
 
 const Home2 = () => {
@@ -26,6 +26,7 @@ const Home2 = () => {
           <SizeInput />
         </div>
       </div>
+      <Footer />
       
       
     </div>

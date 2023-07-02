@@ -1,5 +1,5 @@
-.active{
-    border-bottom: 2px solid blue;
+.nav-link.active{
+    border-bottom: 3px solid blue;
 }
 .nav__list-links{
     width: 45%;
