@@ -6,7 +6,7 @@ import Acura from '../../../assets/acura2.jpeg'
 const Home  = () => {
   return (
     <div className='home__container'>
-      <Navbar btnColor={'blue'} Brand={'Acura'} paragraph={'PRECISION CRAFTED PERFORMANCE'} letter={'A'} />
+      <Navbar btnColor={'#4285F4'} Brand={'Acura'} paragraph={'PRECISION CRAFTED PERFORMANCE'} letter={'A'} />
       <div className='home__container-acura-image'>
         <div className='home__container-acura-image-title'>
           <h1>INTEGRA WINS.</h1>

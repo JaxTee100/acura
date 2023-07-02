@@ -7,7 +7,7 @@
 
 
 .home__container-toggler{
-    margin-top: 80px;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
 }
@@ -16,7 +16,6 @@
     padding: 10px;
     display: flex;
     justify-content: center;
-    margin-top: 35px;
 }
 .home__container-acura-image{
     display: flex;
@@ -53,7 +52,7 @@
 
 @media screen and (max-width: 600px){
     .home__container{
-        font-family: var(--home-font-family);
+        font-family: var(--font-family);
         height: 90vh;
         background-color: #ede6e6;
     }

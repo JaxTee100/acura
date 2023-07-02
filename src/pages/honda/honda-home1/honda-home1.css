@@ -51,29 +51,31 @@
 
 
 @media screen and (max-width: 600px){
-    .home__container{
-        font-family: var(--home-font-family);
-        height: 90vh;
-        background-color: #ede6e6;
+    
+    .home__container-honda-image{
+        height: 50vh;
+        position: relative;
+        height: 50vh;
+        font-family: var(--font-family);
     }
-    .home__container-acura-image{
-        display: flex;
-        flex-direction: column;
+    .home__container-honda-image-text{
+        position: absolute;
+        top: 0;
     }
-    .home__container-acura-image-title{
+    .home__container-honda-image-img img{
         width: 100%;
-        height: 30vh;
-        text-align: center;
-    }
-    .home__container-acura-image-title h1{
-        font-size: 35px;
-    }
-    .home__container-acura-image-title h2{
-        font-size: 30px;
-    }
-    .home__container-acura-image-img{
-        width: 100%;
+        height: 450px;
     }
     
-
+    .home__container-honda-image-text h1{
+        font-size: 25px;
+    }
+    .home__container-honda-image-name{
+        position: absolute;
+        top: 86.5%;
+        left: 63.5%;
+        padding: 5px;
+        background-color: #ede6e6;
+    }
+    
 }
