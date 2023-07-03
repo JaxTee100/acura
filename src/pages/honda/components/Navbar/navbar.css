@@ -66,7 +66,7 @@
     box-shadow: 0 0 5 rgba(0,0,0,0.2);
 }
 
-@media screen and (max-width: 1050px){
+@media screen and (max-width: 1200px){
     .nav-link-items{
         display: none;
     }

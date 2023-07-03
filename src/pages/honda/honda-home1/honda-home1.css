@@ -1,48 +1,35 @@
-.home__container{
+.honda-home__container{
     font-family: var(--font-family);
     height: 100vh;
     background-color: #ede6e6;
+    padding: 3px;
+    
+    
 
 }
 
-.home__container-honda-image{
-    height: 50vh;
+.honda-home__container-honda-image{
     position: relative;
-}
-.home__container-honda-image-text{
-    position: absolute;
-    top: 70%;
-    left: 15%;
-    color: white;
-    font-size: 25px;
-    text-align: center;
-}
-.home__container-honda-image-img img{
+    height: 50vh;
     width: 100%;
-    height: 50%;
+    
+    
 }
-.home__container-honda-image-name{
+.honda-home__container-honda-image-text{
     position: absolute;
-    top: 127.7%;
-    left: 92.33%;
-    padding: 5px;
-    background-color: #ede6e6;
+    top: 40%;
+    left: 20%;
+    color: white;
+    font-family: var(--font-family);
+
 }
-.home__container-honda-image-name .texts h2{
-    font-weight: 600;
+.honda-home__container-honda-image-img img{
+    width: 100%;
+    height: 100%;
 }
-.home__container-honda-image-name .texts p{
-    color: black;
-    font-size: 16px;
-    font-weight: 600;
-}
-.home__container-honda-image-name .texts p span{
-    font-weight: 600;
-    margin-left: 5px;
-    font-size: 16px;
-    color: red;
-}
-.home__container-inputs{
+
+
+.honda-home__container-inputs{
     margin-top: 250px;
 }
 
@@ -50,32 +37,49 @@
 
 
 
-@media screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {
+    /* CSS rules for small devices */
     
-    .home__container-honda-image{
-        height: 50vh;
+    .honda-home__container-honda-image{
         position: relative;
         height: 50vh;
-        font-family: var(--font-family);
-    }
-    .home__container-honda-image-text{
-        position: absolute;
-        top: 0;
-    }
-    .home__container-honda-image-img img{
         width: 100%;
+        
+        
+    }
+    .honda-home__container-honda-image-img img{
         height: 450px;
     }
-    
-    .home__container-honda-image-text h1{
-        font-size: 25px;
+    .honda-home__container-inputs{
+        margin-top: 60px;
     }
-    .home__container-honda-image-name{
-        position: absolute;
-        top: 86.5%;
-        left: 63.5%;
-        padding: 5px;
-        background-color: #ede6e6;
+    .honda-footer-container{
+        margin-top: 0;
     }
-    
-}
+   
+  }
+  
+  @media (min-width: 601px) and (max-width: 900px) {
+    .honda-home__container{
+        border: 2px solid red;
+    }
+   
+    .honda-home__container-inputs{
+        margin-top: 60px;
+    }
+  }
+  
+  @media (min-width: 901px) and (max-width: 1800px) {
+    /* Adjust styles for larger screens */
+    .honda-home__container{
+        border: 2px solid green;
+    }
+     
+   
+    .honda-home__container-inputs{
+        margin-top: 270px;
+    }
+    .honda-footer-container{
+        margin-top: 170px;
+    }
+  }

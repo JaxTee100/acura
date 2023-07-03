@@ -6,29 +6,24 @@ import HondaNavbar from '../components/Navbar/Navbar'
 
 const HondaHome1 = () => {
   return (
-    <div className='honda-home-container'>
+    <div className='honda-home-main-container'>
       <HondaNavbar fontColor={'red'} btnColor={'#ce4e4e'} Brand={'HONDA'} paragraph={'The power of dreams'} />
-      <div className='home__container'>
-        <div className='home__container-honda-image'>
-          <div className='home__container-honda-image-text'>
-            <h1>Taking off winter tires?</h1>
-            <h1>We offer tire storage</h1>
+      <div className='honda-home__container'>
+        <div className='honda-home__container-honda-image'>
+          <div className='honda-home__container-honda-image-text'>
+            <h1>Taking off winter tires?<br />We offer tire storage</h1>
+            
           </div>
-          <div className='home__container-honda-image-img'>
+          <div className='honda-home__container-honda-image-img'>
             <img src={Tires} />
           </div>
-          <div className='home__container-honda-image-name'>
-            <div className='texts'>
-              <h2>Destination</h2>
-              <p>BURNABY <span>HONDA</span></p>
-            </div>
-          </div>
+          
         </div>
-        <div className='home__container-inputs'>
-          <div className='home__container-toggler'>
+        <div className='honda-home__container-inputs'>
+          <div className='honda-home__container-toggler'>
             <Toggler toggleText1="Search by Vehicle" toggleText2="Search by Tire Size" />
           </div>
-          <div className='home__container-inputs-map'>
+          <div className='honda-home__container-inputs-map'>
             <SizeInput />
           </div>
         </div>
@@ -36,7 +31,10 @@ const HondaHome1 = () => {
       
       
       </div>
-      <Footer />
+      <div className='honda-footer-container'>
+        <Footer />
+      </div>
+      
     </div>
   )
 }

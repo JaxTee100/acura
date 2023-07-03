@@ -36,7 +36,10 @@ const HondaHome2 = () => {
       
       
       </div>
-      <Footer />
+      <div className='footer2-container'>
+        <Footer />
+      </div>
+      
     </div>
   )
 }
