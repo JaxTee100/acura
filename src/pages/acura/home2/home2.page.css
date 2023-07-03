@@ -143,9 +143,7 @@
   
   @media (min-width: 901px) and (max-width: 1800px) {
     /* Adjust styles for larger screens */
-    .home2__container{
-        border: 1px solid red;
-    }
+   
     
     .home2__container-acura-image-title h1{
         font-size: 40px;
