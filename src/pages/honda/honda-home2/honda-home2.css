@@ -71,7 +71,7 @@
         height: 25vh;
     }
     .input-container2{
-        padding: 20px;
+        padding: 10px 0;
         text-align: center;
         display: grid;
         grid-template-columns: 0.5fr;

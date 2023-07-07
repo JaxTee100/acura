@@ -61,10 +61,11 @@
         height: 25vh;
     }
     .input-container{
-        padding: 20px;
+        border: 1px solid red;
+        padding: 10px 0;
         text-align: center;
         display: grid;
-        grid-template-columns: 0.5fr;
+        grid-template-columns: 0.1fr;
         gap: 10px;
     }
 }
