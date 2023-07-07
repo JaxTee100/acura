@@ -8,7 +8,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 const Home  = () => {
   return (
     <div className='acura-home__container' >
-      <NavbarComponent />
+      <NavbarComponent url1={'/acura-home'} name1={'Acura'}/>
       <Container fluid >
         <Row className='row-div'>
         <Col className='border p-5 bg-color size'  sm={6}>

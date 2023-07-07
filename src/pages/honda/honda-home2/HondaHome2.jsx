@@ -6,35 +6,31 @@ import HondaNavbar from '../components/Navbar/Navbar'
 
 const HondaHome2 = () => {
   return (
-    <div className='honda2-home-container'>
-      <HondaNavbar fontColor={'red'} btnColor={'#ce4e4e'} Brand={'HONDA'} paragraph={'The power of dreams'} />
-      <div className='honda2-home__container'>
-        <div className='honda2-home__container-honda-image1'>
-          <div className='honda2-home__container-honda-image-text'>
-            <h1>Taking off winter tires?</h1>
-            <h1>We offer tire storage</h1>
-          </div>
-          <div className='honda2-home__container-honda-image-img2'>
-            <img src={Tires} />
-          </div>
-          
+    // 
+    <div className='honda2-container'>
+      <HondaNavbar />
+      <div className='image-container2'>
+        <div className='image-container2__text'>
+          <h1>Taking off winter tires?<br />We offer tire storage.</h1>
         </div>
-        <div className='honda2-home__container-inputs1'>
-          <div className='honda2-home__container-toggler'>
-            <Toggler toggleText1="Search by Vehicle" toggleText2="Search by Tire Size" />
-          </div>
-          <div className='honda2-home__container-inputs-map'>
-            <SizeInput />
-          </div>
+        <div className='image-container2__image'>
+          <img src={Tires} alt="tire-image" />
         </div>
-        
-      
-      
+
       </div>
-      <div className='honda2-footer-container'>
+      <div className='input-container2'>
+        <div className='toggle-button2'>
+          <Toggler toggleText1="Search by Vehicle" toggleText2="Search by Tire Size" />
+        </div>
+        <div className='map-input2'>
+          <SizeInput />
+        </div>
+
+      </div>
+      <div className='foot-container'>
         <Footer />
       </div>
-      
+
     </div>
   )
 }

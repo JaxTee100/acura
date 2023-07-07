@@ -8,9 +8,6 @@ import { HondaAccessories, HondaContact, HondaPackages, HondaTires, HondaWheels 
 import HondaHome1 from './pages/honda/honda-home1/HondaHome1';
 import HomeMain from './pages/main-home/Home';
 import HondaHome2 from './pages/honda/honda-home2/HondaHome2';
-import Practice from './practice';
-import BasicExample from './practice';
-import CustomNav from './practice';
 
 
 const App = () => {
