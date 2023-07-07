@@ -1,82 +1,32 @@
-import React, {useState} from 'react';
+import React from 'react';
+import { Navbar, Nav, Button } from 'react-bootstrap';
 import { Link, NavLink } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import './navbar.component.css'
-import {Button, LogoContainer,  ShoppingCart} from '../index'
-import {RiMenu3Line, RiCloseLine} from 'react-icons/ri';
 
-
-const Menu = () => {
+const NavbarComponent = () => {
+  
   return (
-        <ul className='nav__list-links'>
-          <li>
-            <NavLink to="/acura-home" className='nav-link' activeClassName="active">Acura</NavLink>
-          </li>
-          <li>
-            <NavLink to="/acura-home2" className='nav-link' activeClassName="active" >Acura2</NavLink>
-          </li>
-          <li>
-            <NavLink to="/tires" className='nav-link' activeClassName="active">Tires</NavLink>
-          </li>
-          <li>
-            <NavLink to="/wheels" className='nav-link' activeClassName="active">Wheels</NavLink>
-          </li>
-          <li>
-            <NavLink to="/accessories" className='nav-link' activeClassName="active">Accessories</NavLink>
-          </li>
-          <li>
-            <NavLink to="/packages" className='nav-link' activeClassName="active">Packages</NavLink>
-          </li>
-          <li>
-            <NavLink to="/contact" className='nav-link' activeClassName="active">Contact Us</NavLink>
-          </li>
-          
-        </ul>
-  )
-}
-
-
-
-const Navbar = ({color, btnColor, letter, Brand, paragraph, fontColor}) => {
-  const styles = {
-    backgroundColor: color,
-  }
-  const [toggleMenu, setToggleMenu] = useState(false)
-  return (
-    <nav>
-      <div className='nav-link-items' style={styles}>
-          <Link to='/'><LogoContainer letter={letter} Brand={Brand} paragraph={paragraph} fontColor={fontColor}/></Link>
-        
-          <Menu />
-        
-        <div className='nav__click-items'>
-          <Button text="Sign in" color={btnColor} radius={'20px'}/>
-          <ShoppingCart value="03" color={'#4285F4'}/>
-        </div>
-      </div>
-      
-      <div className='navbar-menu'>
-        {toggleMenu 
-          ? <RiCloseLine  size={27} onClick={() =>setToggleMenu(false) } />
-          : <RiMenu3Line  size={27} onClick={() => setToggleMenu(true)} />
-        }
-        {
-          toggleMenu && (
-            <div className='navbar-menu-container'>
-              <div className='navbar-menu-links'>
-                <Menu />
-                <div className='nav__click-items'>
-                  <Button text="Sign in" color={btnColor} radius={'20px'}/>
-                  <ShoppingCart value="03"/>
-                </div>
-              </div>
-
-            </div>
-          )
-        }
-      </div>
-      
-    </nav>
+    <Navbar collapseOnSelect expand="lg" bg="light" variant="light"  >
+      <Navbar.Brand as={Link}  to="/" style={{width: "10%"}} >Logo</Navbar.Brand>
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Collapse id="responsive-navbar-nav">
+        <Nav className="mr-auto my-margin">
+          <Nav.Link as={NavLink} to="/acura-home" className="nav-link" activeclassname="active">Home</Nav.Link>
+          <Nav.Link as={NavLink} to="/tires" className="nav-link" activeclassname="active1">Tires</Nav.Link>
+          <Nav.Link as={NavLink} to="/wheels" className="nav-link" activeclassname="active1">Wheels</Nav.Link>
+          <Nav.Link as={NavLink} to="/accessories" className="nav-link" activeclassname="active1">Accessories</Nav.Link>
+          <Nav.Link as={NavLink} to="/packages" className="nav-link" activeclassname="active1">Packages</Nav.Link>
+          <Nav.Link as={NavLink} to="/contact" className="nav-link" activeclassname="active1">Contact Us</Nav.Link>
+        </Nav>
+        <Nav className="align-items-center spaced">
+          <Button variant="primary" className="mr-2 b-r">Sign In</Button>
+          <FontAwesomeIcon icon={faShoppingCart} size="lg" />
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   );
 };
 
-export default Navbar;
+export default NavbarComponent;

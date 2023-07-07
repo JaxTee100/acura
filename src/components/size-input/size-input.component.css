@@ -12,6 +12,7 @@
 }
 .size-input__container-tire-size{
     display: flex;
+    text-align: centr;
     position: relative;
     max-width: 600px;
     width: 250px;
@@ -25,8 +26,7 @@
     width: 100%;
     border-radius: 35px;
     font-size: 12px;
-    text-align: left;
-    padding-left: 33px;
+    text-align: center;
 }
 .size-input__container-tire-size .tire{
     position: absolute;
@@ -56,7 +56,7 @@
 }
 .size-input__container .zip input{
     font-size: 12px;
-    padding-left: 33px;
+    text-align: center;
     outline: none;
     border: none;
     border-radius: 35px;
@@ -77,24 +77,23 @@
 @media only screen and (max-width: 600px) {
     /* CSS rules for small devices */
     .size-input__container{
-        
-        width: 410px;
+        width: 370px;
     }
     .size-input__container-tire-size{
-        width: 140px;
+        width: 153px;
+        font-size: 10px;
+        margin-right: 10px;
+    }
+    .size-input__container .zip{
+        width: 153px;
     }
     .size-input__container-tire-size .tire{
-        position: absolute;
-        font-size: 16px;
-        top: 12px;
-        left: 0;
-        color: black;
+        display: none;
+        
     }
     .size-input__container-tire-size .info{
-        position: absolute;
-        font-size: 16px;
-        top: 12px;
-        left: 120px;
+        display: none;
+        
     }
     .size-input__container .zip{
         position: relative;

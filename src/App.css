@@ -5,8 +5,9 @@
   scroll-behavior: smooth;
 }
 body{
-  background: var(--color-bg);
+  background: #ede6e6;
   font-family: var(--font-family);
+  
 }
 
 a{

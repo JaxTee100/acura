@@ -1,7 +1,7 @@
-.active{
+/* .active{
     color: red;
     border-bottom: 2px solid red;
-}
+} */
 .nav__list-links{
     width: 45%;
     display: flex;

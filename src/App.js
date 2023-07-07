@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 import {Layout} from './components/index'
 import {Home,Accessories, Contact, Packages, Tires, Wheels, Home2 } from './pages/index.js'
@@ -7,6 +8,9 @@ import { HondaAccessories, HondaContact, HondaPackages, HondaTires, HondaWheels 
 import HondaHome1 from './pages/honda/honda-home1/HondaHome1';
 import HomeMain from './pages/main-home/Home';
 import HondaHome2 from './pages/honda/honda-home2/HondaHome2';
+import Practice from './practice';
+import BasicExample from './practice';
+import CustomNav from './practice';
 
 
 const App = () => {

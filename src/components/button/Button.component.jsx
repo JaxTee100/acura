@@ -16,7 +16,7 @@ const Button = ({text, color, width, height, radius}) => {
   };
 
   return (
-    <button className='btn' style={styles}>
+    <button variant="primary" size="lg" block className='btn' style={styles}>
         {text}
     </button>
   )
