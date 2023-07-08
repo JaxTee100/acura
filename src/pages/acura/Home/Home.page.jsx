@@ -1,44 +1,36 @@
 import React from 'react'
 import './home.page.css'
 import {Button, Footer, Navbar, SizeInput, Toggler} from '../../../components'
-import Acura from '../../../assets/acura2.jpeg'
+import Acura from '../../../assets/acura222.jpeg'
 import NavbarComponent from '../../../components/Navbar/Navbar.component'
 import { Col, Container, Row } from 'react-bootstrap'
 
 const Home  = () => {
   return (
-    <div className='acura-home__container' >
-      <NavbarComponent url1={'/acura-home'} name1={'Acura'}/>
-      <Container fluid >
-        <Row className='row-div'>
-        <Col className='border p-5 bg-color size'  sm={6}>
-          <h1 className='text-light'>INTEGRA WINS.</h1>
-          <h2 className='text-light'>NORTH AMERICAN 2023 CAR OF THE YEAR</h2>
-          <button variant='primary' className='bg-danger' size='lg' style={{ width: '200px', borderRadius: '35px' }}>
-            Shop Now
-          </button>
-        </Col>
-          <Col className='border  bg-color size'  sm={6}>
-            <img src={Acura} alt='car-im'  />
-          </Col>
-        </Row>
-        
-      </Container>
-      <div className='acura-home__container-inputs'>
-        <div className='acura-home__container-toggler'>
+    <div>
+      <NavbarComponent />
+      <div className='acura-container'>
+        <div className='acura-container__text'>
+          <h1>INTEGRA WINS.</h1>
+          <h2>NORTH AMERICAN 2023 CAR OF THE YEAR</h2>
+          <button>Shop Now</button>
+        </div>
+        <div className='acura-container__image'>
+          <img src={Acura} alt='car-im'  />
+        </div>
+      </div>
+      <div className='acura-container__inputs'>
+        <div className='toggle'>
           <Toggler toggleText1="Search by Vehicle" toggleText2="Search by Tire Size" />
         </div>
-        <div className='acura-home__container-inputs-map'>
+        <div className='size-input'>
           <SizeInput />
         </div>
       </div>
-      <div className='footer-div'>
+      <div className='acura-footer'>
         <Footer />
       </div>
-      
-      
-      
-      
+
     </div>
   )
 }

@@ -62,7 +62,6 @@
     }
     .input-container{
         padding: 10px 0;
-        text-align: center;
         display: grid;
         grid-template-columns: 0.1fr;
         gap: 10px;

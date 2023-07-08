@@ -32,34 +32,34 @@ const Footer = ({color}) => {
     // </footer>
     <footer>
       <div className='footer-container'>
-        <div>
+        <div className='pic-box'>
           <img src={Pirelli} alt="pirelli"/>
         </div>
-        <div>
+        <div className='pic-box'>
           <img src={Pirelli} alt="pirelli"/>
         </div>
-        <div>
+        <div className='pic-box'>
           <img src={Pirelli} alt="pirelli"/>
         </div>
-        <div>
+        <div className='pic-box'>
           <img src={Pirelli} alt="pirelli"/>
         </div>
-        <div>
+        <div className='pic-box'>
           <img src={Pirelli} alt="pirelli"/>
         </div>
-        <div>
+        <div className='pic-box'>
           <img src={Pirelli} alt="pirelli"/>
         </div>
-        <div>
+        <div className='pic-box'>
           <img src={Pirelli} alt="pirelli"/>
         </div>
-        <div>
+        <div className='pic-box'>
           <img src={Pirelli} alt="pirelli"/>
         </div>
-        <div>
+        <div className='pic-box'>
           <img src={Pirelli} alt="pirelli"/>
         </div>
-        <div>
+        <div className='pic-box'>
           <img src={Pirelli} alt="pirelli"/>
         </div>
       </div>

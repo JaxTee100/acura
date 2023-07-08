@@ -1,51 +1,95 @@
-/* .acura-home__container-acura-image-title{
-    width: 50%;
-    padding: 30px;
-    background: linear-gradient(90deg, rgba(1, 16, 50, 1) 67%, rgba(31, 65, 120, 1) 92%);
-} */
-.container{
-    padding: 0;
-    margin: 0;
-    width: 1900px;
+.acura-container{
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 }
-.bg-color{
+.acura-container__text{
     background: linear-gradient(90deg, rgba(1, 16, 50, 1) 67%, rgba(31, 65, 120, 1) 92%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.acura-container__text h1{
+    font-weight: 600;
+    font-family: var(--font-family);
+    color: whitesmoke;
+}
+.acura-container__text h2{
+    font-size: 20px;
+    color: white;
+}
+.acura-container__text button{
+    background-color: red;
+    border-radius: 30px;
 }
 
-.size{
+.acura-container__image img{
     height: 50vh;
 }
-.size h1{
-    font-size: 50px;
+.acura-container__inputs{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
 }
-.size h2{
-    font-size: 24px;
-}
-.row-div{
-    margin-bottom: 30px;
-}
-
-.size img{
-    height: 100%;
-    width: 100%;
-}
-.acura-home__container-inputs{
-    width: 700px;
-    margin: 0 auto;
-}
-.acura-home__container-toggler{
+.acura-container__inputs .toggle{
     display: flex;
     justify-content: center;
-    margin-bottom: 15px;
 }
-.footer-div{
+.acura-container__inputs .size-input{
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 120px;
+}
+.acura-footer{
+    margin-top: 10vh;
 }
 
- @media screen and (max-width: 576px) {
+@media screen and (max-width: 576px) {
+    .acura-container{
+        border: 1px solid yellow;
+    }
+    
+} 
+@media screen and (max-width: 1080px) {
+   
+    .acura-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+    .acura-container__text{
+        height: 30vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .acura-container__text h1{
+        font-size: 30px;
+    }
+    .acura-container__text h2{
+        font-size: 18px;
+    }
+    .acura-container__image img{
+        height: 20vh;
+        width: 100%;
+    }
+    .acura-container__text button{
+        background-color: red;
+        border-radius: 30px;
+        font-size: 16px;
+    }
+    .acura-container__inputs{
+        padding: 10px 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+ 
+   
+}
+
+ /* @media screen and (max-width: 576px) {
     
     .size{
         text-align: center;
@@ -97,4 +141,4 @@
     .size h2{
         font-size: 25px;
     }
-} */
+} */ 
