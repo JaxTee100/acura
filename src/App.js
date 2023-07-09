@@ -8,6 +8,7 @@ import { HondaAccessories, HondaContact, HondaPackages, HondaTires, HondaWheels 
 import HondaHome1 from './pages/honda/honda-home1/HondaHome1';
 import HomeMain from './pages/main-home/Home';
 import HondaHome2 from './pages/honda/honda-home2/HondaHome2';
+import MainNavbar from './components/main-navbar/MainNavbar';
 
 
 const App = () => {
@@ -30,6 +31,7 @@ const App = () => {
           <Route path="/honda-packages" element={<HondaPackages />} />
           <Route path="/honda-contact" element={<HondaContact />} />
           <Route path="/honda-wheels" element={<HondaWheels />} />
+          <Route path="/nav" element={<MainNavbar />} />
           
 
         </Routes>

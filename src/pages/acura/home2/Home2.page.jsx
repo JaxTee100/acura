@@ -15,9 +15,6 @@ const Home2  = () => {
           <h2>NORTH AMERICAN 2023 CAR OF THE YEAR</h2>
           <button>Shop Now</button>
         </div>
-        <div className='acura-container2__image'>
-          <img src={Acura} alt='car-im'  />
-        </div>
       </div>
       <div className='acura-container2__inputs'>
         <div className='toggle'>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { PiShoppingCartSimpleLight } from 'react-icons/pi';
+import {FaShoppingCart} from 'react-icons/fa'
 import './shopping-cart.component.css'
 
 const ShoppingCart = ({value, color}) => {
@@ -8,9 +8,9 @@ const ShoppingCart = ({value, color}) => {
   }
   return (
     <div className='shopping-cart-container'>
-      <PiShoppingCartSimpleLight className='shopping-cart-icon'/>
+      <FaShoppingCart color='#000' size={27}/>
       <div className='shopping-cart-value' style={styles} >
-        <p>{value}</p>
+        <p>10</p>
       </div>
     </div>
   )

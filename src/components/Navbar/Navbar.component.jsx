@@ -4,8 +4,9 @@ import { Link, NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import './navbar.component.css'
+import ShoppingCart from '../shopping-cart/ShoppingCart.component';
 
-const NavbarComponent = ({url1,url2, name2,  name1}) => {
+const NavbarComponent = () => {
   
   return (
     <Navbar collapseOnSelect expand="lg" bg="light" variant="light"  >
@@ -23,7 +24,7 @@ const NavbarComponent = ({url1,url2, name2,  name1}) => {
         </Nav>
         <Nav className="align-items-center spaced">
           <Button variant="primary" className="mr-2 b-r">Sign In</Button>
-          <FontAwesomeIcon icon={faShoppingCart} size="lg" />
+          <ShoppingCart />
         </Nav>
       </Navbar.Collapse>
     </Navbar>

@@ -1,16 +1,24 @@
 .acura-container2{
-    height: 50vh;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
+    height: 60vh;
+    display: flex;
+    padding: 30px;
+    
 }
 .acura-container2__text{
     background: linear-gradient(90deg, rgba(1, 16, 50, 1) 67%, rgba(31, 65, 120, 1) 92%);
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    background-image: url('../../../assets/pexels.jpg');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    border-radius: 40px;
+    padding: 20px;
 }
 .acura-container2__text h1{
+    font-size: 70px;
     font-weight: 600;
     font-family: var(--font-family);
     color: whitesmoke;
@@ -21,12 +29,9 @@
 }
 .acura-container2__text button{
     background-color: red;
-    border-radius: 30px;
 }
 
-.acura-container2__image img{
-    height: 50vh;
-}
+
 .acura-container2__inputs{
     padding: 20px;
     display: grid;
@@ -59,7 +64,7 @@
         
     }
     .acura-container2__text{
-        height: 30vh;
+        height: 50vh;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -70,10 +75,7 @@
     .acura-container2__text h2{
         font-size: 18px;
     }
-    .acura-container2__image img{
-        height: 20vh;
-        width: 100%;
-    }
+   
     .acura-container2__text button{
         background-color: red;
         border-radius: 30px;

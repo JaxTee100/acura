@@ -3,7 +3,6 @@ import './home.page.css'
 import {Button, Footer, Navbar, SizeInput, Toggler} from '../../../components'
 import Acura from '../../../assets/acura222.jpeg'
 import NavbarComponent from '../../../components/Navbar/Navbar.component'
-import { Col, Container, Row } from 'react-bootstrap'
 
 const Home  = () => {
   return (
@@ -15,9 +14,7 @@ const Home  = () => {
           <h2>NORTH AMERICAN 2023 CAR OF THE YEAR</h2>
           <button>Shop Now</button>
         </div>
-        <div className='acura-container__image'>
-          <img src={Acura} alt='car-im'  />
-        </div>
+        
       </div>
       <div className='acura-container__inputs'>
         <div className='toggle'>
